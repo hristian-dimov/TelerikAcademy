@@ -1,0 +1,6 @@
+D:\VisualSolutions\01. DefiningClassesPartOne\01. GSM\bin\Debug\_01.GSM.exe.config
+D:\VisualSolutions\01. DefiningClassesPartOne\01. GSM\bin\Debug\_01.GSM.exe
+D:\VisualSolutions\01. DefiningClassesPartOne\01. GSM\bin\Debug\_01.GSM.pdb
+D:\VisualSolutions\01. DefiningClassesPartOne\01. GSM\obj\Debug\01. GSM.csprojResolveAssemblyReference.cache
+D:\VisualSolutions\01. DefiningClassesPartOne\01. GSM\obj\Debug\_01.GSM.exe
+D:\VisualSolutions\01. DefiningClassesPartOne\01. GSM\obj\Debug\_01.GSM.pdb
