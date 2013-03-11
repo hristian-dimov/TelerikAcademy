@@ -9,4 +9,4 @@
 5. Using the extension methods OrderBy() and ThenBy() with lambda expressions sort the students by first name and last name in descending order. Rewrite the same with LINQ.
 6. Write a program that prints from given array of integers all numbers that are divisible by 7 and 3. Use the built-in extension methods and lambda expressions. Rewrite the same with LINQ.
 7. Using delegates write a class Timer that has can execute certain method at each t seconds.
-8.* Read in MSDN about the keyword event in C# and how to publish events. Re-implement the above using .NET events and following the best practices.
+8. * Read in MSDN about the keyword event in C# and how to publish events. Re-implement the above using .NET events and following the best practices.
