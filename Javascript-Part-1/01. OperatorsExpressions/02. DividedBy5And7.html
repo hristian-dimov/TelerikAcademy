@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Is dividable by 5 and 7</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <input type="text" id="checkInt" value="" />
+    <button onclick="CheckInteger()">Check</button>
+
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        function CheckInteger() {
+            var integer = jsConsole.readInteger('#checkInt');
+			var isDiviable = (integer % 5 == 0 && integer  % 7 == 0);
+            jsConsole.writeLine("Number " + integer + " is " + (!isDiviable ? "not" : "") + " dividable by 5 and 7 in the same time");
+        }
+    </script>
+</body>
+</html>
