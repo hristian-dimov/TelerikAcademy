@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Is in circle and out of rectangle</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        var X0 = 1;
+		var Y0 = 1;
+		var radius = 3;
+
+		var X1 = 3;
+		var Y1 = 1;
+
+
+		var line = 0;
+
+		var inCircle;
+		var inRectangle;
+		var result;
+
+		line = Math.sqrt((X1 - X0) * (X1 - X0) + (Y1 - Y0) * (Y1 - Y0));
+
+		inCircle = (radius >= line ? true : false);
+		inRectangle = (X1 >= -1 && X1 <= 5 && Y1 >= -1 && Y1 <= 1);
+
+		if(inCircle == true && inRectangle == false) 
+		{
+			result = true;
+		} 
+		else
+		{
+			result = false;
+		}
+
+		jsConsole.writeLine(result);
+    </script>
+</body>
+</html>
