@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Convert Number To Text</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    Number: <input type="text" id="number" value="" />
+    <button onclick="ConvertNumberToText()">Convert</button>
+
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        function ConvertNumberToText() {
+            var number = jsConsole.readInteger('#number');
+			var ToWords = '';
+
+			var units = { 0: "zero", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten", 11: "eleven", 12: "twelve", 13: "thirteen", 14: "fourteen", 15: "fifteen", 16: "sixteen", 17: "seventeen", 18: "eighteen", 19: "nineteen" };
+			var tens = { 0: "zero", 1: "ten", 2: "twenty", 3: "thirty", 4: "forty", 5: "fifty", 6: "sixty", 7: "seventy", 8: "eighty", 9: "ninety" };
+
+			if (number == 0)
+			{
+				ToWords = "Zero";
+			}
+			else
+			{
+				if ((number / 100) > 0)
+				{
+					ToWords += units[Math.floor(number / 100)] + " hundred ";
+					number %= 100;
+				}
+
+				if (number > 0)
+				{
+					if (number < 20)
+						ToWords += "and " + units[Math.floor(number)];
+					else
+					{
+						ToWords += tens[Math.floor(number / 10)];
+						if ((number % 10) > 0)
+							ToWords += " " + units[Math.floor(number % 10)];
+					}
+				}
+			}
+
+			jsConsole.writeLine(ToWords.substring(0, 1).toUpperCase() + ToWords.substring(1));
+        }
+    </script>
+</body>
+</html>

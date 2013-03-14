@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Solve Quadratic Equation</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    A: <input type="text" id="a" value="" /><br />
+    B: <input type="text" id="b" value="" /><br />
+    C: <input type="text" id="c" value="" /><br />
+    <button onclick="SolveQuadraticEquation()">Solve Quadratic Equation</button>
+
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        function SolveQuadraticEquation() {
+            var a = jsConsole.readInteger('#a');
+            var b = jsConsole.readInteger('#b');
+            var c = jsConsole.readInteger('#c');
+
+            var D = (b * b) - 4 * a * c;
+
+            if (a == 0)
+            {
+                jsConsole.writeLine("Only one solution - x1: " + -c / b);
+            }
+            else
+            {
+                if (D < 0)
+                {
+                    jsConsole.writeLine("There is no solution.");
+                }
+                else
+                {
+                    var sqrt = Math.sqrt(D);
+                    var X1 = (-b + sqrt) / (2 * a);
+                    var X2 = (-b - sqrt) / (2 * a);
+
+                    if (X1 == X2)
+                    {
+                        jsConsole.writeLine("Only one solution: x1 = x2 = {0}" + X1);
+                    }
+                    else
+                    {
+                        jsConsole.writeLine("x1 = " + X1 + "; x2 = " + X2);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
