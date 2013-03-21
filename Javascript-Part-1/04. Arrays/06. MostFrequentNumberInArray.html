@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>06. Most frequent number in array</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <button onclick="Solve()">Find</button>
+
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        function Solve() {
+            var array = [4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3];
+            var checkedNum;
+            var count = 0;
+            var maxCount = 0;
+            var number;
+
+            for (var i = 0; i < array.length; i++) {
+
+                checkedNum = array[i];
+                for (var j = 0; j < array.length; j++) {
+                    if (checkedNum == array[j]) {
+                        count++;
+                    }
+                }
+                if (count > maxCount) {
+                    maxCount = count;
+                    number = checkedNum;
+                }
+                count = 0;
+            }
+            jsConsole.writeLine(number + "( " + maxCount + " times )");
+        }
+	</script>
+</body>
+</html>
