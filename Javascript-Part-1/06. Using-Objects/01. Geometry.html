@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Geometry</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <button onclick="Solve()">Solve</button>
+
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        function makePoint(xCoord, yCoord) {
+            return {
+                x: xCoord,
+                y: yCoord
+            };
+        }
+
+        function makeLine(pointOne, pointTwo) {
+            return {
+                pointOne: pointOne,
+                pointTwo: pointTwo,
+                length: Math.sqrt((pointTwo.x - pointOne.x) * (pointTwo.x - pointOne.x) + (pointTwo.y - pointOne.y) * (pointTwo.y - pointOne.y))
+            }
+        }
+
+        function isTriangle(sideA, sideB, sideC) {
+            if (sideA.length + sideB.length > sideC.length) {
+                if (sideB.length + sideC.length > sideA.length) {
+                    if (sideA.length + sideC.length > sideB.length) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        function Solve() {
+            var firstPoint = makePoint(4, 1);
+            var secondPoint = makePoint(1, 1);
+            var thirdPoint = makePoint(1, 1);
+            var fourthPoint = makePoint(1, 6);
+            var fifthPoint = makePoint(1, 1);
+            var sixthPoint = makePoint(1, 5);
+
+            var sideA = makeLine(firstPoint, secondPoint);
+            var sideB = makeLine(thirdPoint, fourthPoint);
+            var sideC = makeLine(fifthPoint, sixthPoint);
+
+            if (isTriangle(sideA, sideB, sideC)) {
+                jsConsole.writeLine("The lines can form a triangle");
+            }
+            else {
+                jsConsole.writeLine("The lines cannot form a triangle");
+            }
+        }
+    </script>
+</body>
+</html>

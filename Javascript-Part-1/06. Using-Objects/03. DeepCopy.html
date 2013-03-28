@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Deep copy</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <button onclick="Solve()">Copy</button>
+
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        function Solve() {
+            var a = {
+                first: 123,
+                second: -100,
+                third: "sup"
+            }
+
+            var b = Object.create(a);
+            for (var i in b) {
+                jsConsole.write(b[i]);
+            }
+
+            jsConsole.writeLine();
+
+            var c = clone(a);
+            for (var i in c) {
+                jsConsole.write(a[i]);
+            }
+        }
+
+        function clone(obj) {
+            if (obj == null || "Object" != typeof obj) {
+                return obj;
+            }
+
+            if (obj instanceof Array) {
+                var copy = [];
+                for (var i = 0 ; i < obj.length ; i++) {
+                    copy[i] = clone(obj[i]);
+                }
+                return copy;
+            }
+
+            if (obj instanceof Object) {
+                var copy = {};
+                for (var attr in obj) {
+                    if (obj.hasOwnProperty(attr)) {
+                        copy[attr] = clone(obj[attr]);
+                    }
+                }
+                return copy;
+            }
+        }
+    </script>
+</body>
+</html>
