@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    Write a sequence of numbers, separated by "," - <input type="text" id="sequence" value="" />
+    <button onclick="Solve()">Find</button>
+
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        function Solve() {
+            var sequence = jsConsole.read('#sequence').split(',');
+
+            var isResult = false;
+
+            for (var i = 0; i < sequence.length; i++) {
+                if (CheckNeightboors(sequence, i)) {
+                    isResult = true;
+                    jsConsole.writeLine(i);
+                    break;
+                }
+            }
+
+            if (!isResult) jsConsole.writeLine("-1");
+        }
+
+        function CheckNeightboors(array, index) {
+            var isBigger = false;
+
+            if (index == 0) {
+                if (parseInt(array[index]) > parseInt(array[index + 1]))
+                    isBigger = true;
+            }
+            else if (index == array.Length - 1) {
+                if (parseInt(array[index]) > parseInt(array[index - 1]))
+                    isBigger = true;
+            }
+            else {
+                if (parseInt(array[index]) > parseInt(array[index - 1]) && parseInt(array[index]) > parseInt(array[index + 1]))
+                    isBigger = true;
+            }
+
+            return isBigger;
+        }
+    </script>
+</body>
+</html>

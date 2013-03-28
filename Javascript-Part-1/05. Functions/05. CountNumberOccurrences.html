@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Count Number Occurrences</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    Write a sequence of numbers, separated by "," - <input type="text" id="sequence" value="" /><br />
+    Search for a number: <input type="text" id="number" value="" /><br />
+    <button onclick="Solve()">Count Number Occurrences</button>
+
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        function Solve() {
+            var sequence = jsConsole.read('#sequence').split(',');
+            var number = jsConsole.read('#number');
+
+            var count = 0;
+
+            for (var i = 0; i < sequence.length; i++) {
+                if (sequence[i] == number) {
+                    count++;
+                }
+            }
+            jsConsole.writeLine("Number " + number + " -> found " + count + " times");
+        }
+    </script>
+</body>
+</html>

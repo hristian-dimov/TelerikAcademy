@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find All Occurrences</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    Text: <input type="text" id="text" value="" /><br />
+    Search for a word: <input type="text" id="word" value="" /><br />
+    Case Sensitive? <br />
+    <input type="radio" name="case" value="0" checked="checked" /> No
+    <input type="radio" name="case" value="1" /> Yes
+    <br />
+    <button onclick="Solve()">Find All Occurrences</button>
+
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        function Solve() {
+            var text = jsConsole.read('#text');
+            var word = jsConsole.read('#word');
+
+            var radios = document.getElementsByTagName('input');
+            var isCaseSensitive;
+
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].type === 'radio' && radios[i].checked) {
+                    isCaseSensitive = radios[i].value;
+                }
+            }
+
+            var count = 0;
+            if (isCaseSensitive == 0) {
+                var i = text.toLowerCase().indexOf(word); // case insensitive
+                while (i >= 0) {
+                    count++;
+                    i = text.toLowerCase().indexOf(word, ++i);
+                }
+            } else {
+                var i = text.indexOf(word);
+                while (i >= 0) {
+                    count++;
+                    i = text.indexOf(word, ++i);
+                }
+            }
+
+            jsConsole.writeLine("Word " + word + " -> " + count + " times");
+        }
+    </script>
+</body>
+</html>
