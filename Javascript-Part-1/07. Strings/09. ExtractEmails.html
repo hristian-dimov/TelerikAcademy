@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>09. ExtractEmails</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <button onclick="Solve()">Extract</button>
+
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        function Solve() {
+            var readString = "1@b.c email@email.com";
+
+            var pattern = /\w+@\w+\.\w+/g;
+
+            var resultString = readString.match(pattern);
+
+            jsConsole.writeLine(resultString);
+        }
+    </script>
+</body>
+</html>

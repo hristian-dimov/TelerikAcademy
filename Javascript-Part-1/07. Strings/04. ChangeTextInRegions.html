@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>04. ChangeTextInRegions</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <button onclick="Solve()">Change</button>
+
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        function Solve() {
+            var readString = "We are <mixcase>living</mixcase> in a <upcase>yellow submarine</upcase>. We <mixcase>don't</mixcase> have <lowcase>anything</lowcase> else.";
+
+            var pattern = /<(.*?)>(.*?)<\/(.*?)>/g;
+
+            var resultString = readString.replace(pattern, function (full, tag, value) {
+                if (tag == 'upcase')
+                    return value.toUpperCase();
+                else if (tag == 'lowcase')
+                    return value.toLowerCase();
+                else {
+                    var randomMixed = [];
+                    var randomNumber;
+
+                    for (var i = 0; i < value.length; i++) {
+                        randomNumber = Math.floor((Math.random() * 10) + 1);
+
+                        randomMixed[i] = (randomNumber % 2 == 0 ? value[i].toUpperCase() : value[i].toLowerCase());
+                    }
+
+                    return randomMixed.join('');
+                }
+            });
+
+            jsConsole.writeLine(resultString);
+        }
+    </script>
+</body>
+</html>

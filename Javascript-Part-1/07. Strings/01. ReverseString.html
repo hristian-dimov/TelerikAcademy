@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>01. Reverse string</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    String: <input type="text" id="string" value="" />
+    <button onclick="Solve()">Reverse</button>
+
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        String.prototype.reverse = function () {
+            var newString = ''
+            var length = this.length;
+
+            while (length) {
+                newString += this[--length];
+            }
+
+            return newString;
+        }
+
+        function Solve() {
+            var string = jsConsole.read('#string');
+
+            jsConsole.writeLine(string.reverse());
+        }
+    </script>
+</body>
+</html>

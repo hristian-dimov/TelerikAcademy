@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>11. FormatString</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <button onclick="Solve()">Format</button>
+
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        function Solve() {
+            var readString = stringFormat("Hello {0}!","Peter");
+            jsConsole.writeLine(readString);
+        }
+
+        function stringFormat(template) {
+            var functionArguments = [];
+            for (var i = 0; i < arguments.length; i++) {
+                functionArguments[i] = arguments[i];
+            }
+
+            template = template.replace(/{([0-9]+)}/g, function (full, placeholderID) {
+                return functionArguments[++placeholderID];
+            });
+
+            return template;
+        }
+    </script>
+</body>
+</html>
