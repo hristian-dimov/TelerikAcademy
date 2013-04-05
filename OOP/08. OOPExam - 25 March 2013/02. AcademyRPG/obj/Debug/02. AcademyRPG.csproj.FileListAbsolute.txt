@@ -1,0 +1,6 @@
+D:\VisualSolutions\OOPExam\02. AcademyRPG\bin\Debug\_02.AcademyRPG.exe.config
+D:\VisualSolutions\OOPExam\02. AcademyRPG\obj\Debug\02. AcademyRPG.csprojResolveAssemblyReference.cache
+D:\VisualSolutions\OOPExam\02. AcademyRPG\bin\Debug\_02.AcademyRPG.exe
+D:\VisualSolutions\OOPExam\02. AcademyRPG\bin\Debug\_02.AcademyRPG.pdb
+D:\VisualSolutions\OOPExam\02. AcademyRPG\obj\Debug\_02.AcademyRPG.exe
+D:\VisualSolutions\OOPExam\02. AcademyRPG\obj\Debug\_02.AcademyRPG.pdb
