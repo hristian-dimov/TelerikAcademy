@@ -1,6 +1,0 @@
-D:\VisualSolutions\OOPExam\01. SoftwareAcademy\bin\Debug\_01.SoftwareAcademy.exe.config
-D:\VisualSolutions\OOPExam\01. SoftwareAcademy\bin\Debug\_01.SoftwareAcademy.exe
-D:\VisualSolutions\OOPExam\01. SoftwareAcademy\bin\Debug\_01.SoftwareAcademy.pdb
-D:\VisualSolutions\OOPExam\01. SoftwareAcademy\obj\Debug\01. SoftwareAcademy.csprojResolveAssemblyReference.cache
-D:\VisualSolutions\OOPExam\01. SoftwareAcademy\obj\Debug\_01.SoftwareAcademy.exe
-D:\VisualSolutions\OOPExam\01. SoftwareAcademy\obj\Debug\_01.SoftwareAcademy.pdb
