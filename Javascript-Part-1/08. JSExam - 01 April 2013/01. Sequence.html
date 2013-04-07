@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        function Solve(params) {
+            var N = parseInt(params[0]);
+            var answer = 1;
+            var numbers = [];
+            var i;
+
+            if (!N)
+                return 0;
+
+            for (i = 1; i <= N; i++) {
+                numbers.push(parseInt(params[i]));
+            }
+
+            for (i = 0; i < numbers.length; i++) {
+                if (numbers[i] > numbers[i + 1])
+                    answer++;
+            }
+
+            return answer;
+        }
+
+        //[9,1,8,8,7,6,5,7,7,6]
+        //[7,1,2,-3,4,4,0,1]
+        //[6,1,3,-5,8,7,-6]
+        alert(Solve([4,0,0,1,0]));
+    </script>
+</body>
+</html>

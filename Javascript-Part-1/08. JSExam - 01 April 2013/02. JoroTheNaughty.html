@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        function Solve(params) {
+            var firstLine = params[0].split(' ');
+			
+            var N = parseInt(firstLine[0]);
+            var M = parseInt(firstLine[1]);
+            var J = parseInt(firstLine[2]);
+
+            var secondLine = params[1].split(' ');
+			
+            var R = parseInt(secondLine[0]);
+            var C = parseInt(secondLine[1]);
+            
+            var num = 1;
+            var matrix = [];
+			
+            for (var i = 0; i < N; i++) {
+                matrix[i] = new Array(N);
+				
+                for (var k = 0; k < M; k++) {
+                    matrix[i][k] = num++;
+                }
+            }
+
+            var jumps = [];
+
+            for (var z = 0; z < J; z++) {
+                jumps.push(params[z + 2]);
+            }
+            // end reading data;
+            
+            var firstJump = false;
+			var isEscaped = false;
+            var jumpsCount = 0;
+            var jumpsSum = 0;
+			var newCoordsX = 0, newCoordsY = 0;
+			var currentJump, currentJumpX, currentJumpY;
+			
+			jumpsSum += matrix[R][C]; // first jump ever
+			
+            for (var p = 0; p < jumps.length; p++) {
+                currentJump = jumps[p].split(' ');
+                currentJumpX = parseInt(currentJump[0]);
+                currentJumpY = parseInt(currentJump[1]);
+                
+				/* need refactoring */
+                if (!firstJump) {
+                    newCoordsX = currentJumpX + R;
+                    newCoordsY = currentJumpY + C;
+                    firstJump = true;
+                } else {
+                    newCoordsX += currentJumpX;
+                    newCoordsY += currentJumpY;
+                } 
+				/* need refactoring */
+
+                if(newCoordsX < N && newCoordsX >= 0 && newCoordsY < M && newCoordsY >= 0) {
+					jumpsCount++;
+					jumpsSum += matrix[newCoordsX][newCoordsY];
+                } else {
+                    isEscaped = true;
+                    break;
+                }
+
+                if (p == jumps.length - 1)
+                    p = -1; // reseting jumps
+            }
+
+            if (isEscaped) {
+                return "escaped " + jumpsSum;
+            } else {
+                return "caught " + jumpsCount;
+            }
+            
+        }
+
+        alert(Solve(["6 7 3","0 0","3 2","-2 2","3 -1"]));
+    </script>
+</body>
+</html>
