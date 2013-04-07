@@ -36,20 +36,20 @@
             // end reading data;
             
             var firstJump = false;
-			var isEscaped = false;
+            var isEscaped = false;
             var jumpsCount = 0;
             var jumpsSum = 0;
-			var newCoordsX = 0, newCoordsY = 0;
-			var currentJump, currentJumpX, currentJumpY;
+            var newCoordsX = 0, newCoordsY = 0;
+            var currentJump, currentJumpX, currentJumpY;
 			
-			jumpsSum += matrix[R][C]; // first jump ever
+            jumpsSum += matrix[R][C]; // first jump ever
 			
             for (var p = 0; p < jumps.length; p++) {
                 currentJump = jumps[p].split(' ');
                 currentJumpX = parseInt(currentJump[0]);
                 currentJumpY = parseInt(currentJump[1]);
                 
-				/* need refactoring */
+		/* need refactoring */
                 if (!firstJump) {
                     newCoordsX = currentJumpX + R;
                     newCoordsY = currentJumpY + C;
@@ -58,11 +58,11 @@
                     newCoordsX += currentJumpX;
                     newCoordsY += currentJumpY;
                 } 
-				/* need refactoring */
+		/* need refactoring */
 
                 if(newCoordsX < N && newCoordsX >= 0 && newCoordsY < M && newCoordsY >= 0) {
-					jumpsCount++;
-					jumpsSum += matrix[newCoordsX][newCoordsY];
+		    jumpsCount++;
+		    jumpsSum += matrix[newCoordsX][newCoordsY];
                 } else {
                     isEscaped = true;
                     break;
