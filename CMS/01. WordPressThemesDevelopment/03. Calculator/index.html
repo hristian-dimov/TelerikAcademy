@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Calculator</title>
+	<script src="validateForm.js"></script>
+</head>
+<body>
+	<form method="post" action="calculate.php" onsubmit="return validateForm()" >
+		<fieldset>
+			<legend>Calculator</legend>
+			<ul>
+				<li>
+					<label for="leftNumber">Number:</label>
+					<div>
+						<input type="text" id="leftNumber" name="leftNumber" />
+					</div>
+				</li>
+				<li>
+					<label for="sign">Sign: ( only + - * / )</label>
+					<div>
+						<input type="text" id="sign" name="sign" />
+					</div>
+				</li>
+				<li>
+					<label for="rightNumber">Number:</label>
+					<div>
+						<input type="text" id="rightNumber" name="rightNumber" />
+					</div>
+				</li>
+				<li>
+					<div>
+						<input type="submit" name="submit" value="Calculate" />
+					</div>
+				</li>
+			</ul>
+		</fieldset>
+	</form>
+</body>
+</html>
