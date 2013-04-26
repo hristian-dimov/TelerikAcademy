@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>05. TagCloud</title>
+    <script src="script.js"></script>
+    <style>
+        #container {
+            width: 300px;
+            border: 1px solid #000;
+        }
+
+        p {
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    Write some tags here (separate them by ", "): <br />
+    <textarea id="text" rows="5" cols="45">cms, javascript, js, ASP.NET MVC, .net, .net, css, wordpress, xaml, js, http, web, asp.net, asp.net MVC, ASP.NET MVC, wp, javascript, js, cms, html, javascript, http, http, CMS</textarea><br />
+    <input type="submit" id="submit" value="Generate" /><br /><br />
+
+    Tag cloud:
+    <div id="container"></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. RandomDivs", "01. RandomDivs\01. RandomDivs.csproj", "{62C139FE-DB8C-4B03-9337-ECD017B9BDAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. RotateDivs", "02. RotateDivs\02. RotateDivs.csproj", "{48CE4BC2-74AD-4FE2-A336-0742205A799D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. ShimSelectors", "03. ShimSelectors\03. ShimSelectors.csproj", "{2D77B31E-692D-4C91-8E7E-5962E629C4F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. ColoredTextArea", "04. ColoredTextArea\04. ColoredTextArea.csproj", "{D6A48CC0-6F3F-4D4C-A5DA-FF1BEBF156B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. TagCloud", "05. TagCloud\05. TagCloud.csproj", "{DE857118-AB0C-4990-8844-8D9448D03E97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62C139FE-DB8C-4B03-9337-ECD017B9BDAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C139FE-DB8C-4B03-9337-ECD017B9BDAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C139FE-DB8C-4B03-9337-ECD017B9BDAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C139FE-DB8C-4B03-9337-ECD017B9BDAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48CE4BC2-74AD-4FE2-A336-0742205A799D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48CE4BC2-74AD-4FE2-A336-0742205A799D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48CE4BC2-74AD-4FE2-A336-0742205A799D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48CE4BC2-74AD-4FE2-A336-0742205A799D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D77B31E-692D-4C91-8E7E-5962E629C4F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D77B31E-692D-4C91-8E7E-5962E629C4F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D77B31E-692D-4C91-8E7E-5962E629C4F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D77B31E-692D-4C91-8E7E-5962E629C4F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A48CC0-6F3F-4D4C-A5DA-FF1BEBF156B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A48CC0-6F3F-4D4C-A5DA-FF1BEBF156B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A48CC0-6F3F-4D4C-A5DA-FF1BEBF156B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A48CC0-6F3F-4D4C-A5DA-FF1BEBF156B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE857118-AB0C-4990-8844-8D9448D03E97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE857118-AB0C-4990-8844-8D9448D03E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE857118-AB0C-4990-8844-8D9448D03E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE857118-AB0C-4990-8844-8D9448D03E97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
