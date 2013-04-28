@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Size", "01. Size\01. Size.csproj", "{136E6218-CB9E-43F3-9A5F-42A1F336B317}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. PrintStatistics", "02. PrintStatistics\02. PrintStatistics.csproj", "{E9AF54B3-BF2C-412C-9C26-F41E8F22D984}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{136E6218-CB9E-43F3-9A5F-42A1F336B317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136E6218-CB9E-43F3-9A5F-42A1F336B317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136E6218-CB9E-43F3-9A5F-42A1F336B317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136E6218-CB9E-43F3-9A5F-42A1F336B317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9AF54B3-BF2C-412C-9C26-F41E8F22D984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9AF54B3-BF2C-412C-9C26-F41E8F22D984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9AF54B3-BF2C-412C-9C26-F41E8F22D984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9AF54B3-BF2C-412C-9C26-F41E8F22D984}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
