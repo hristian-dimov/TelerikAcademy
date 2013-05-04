@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>02. MovingShapes</title>
+    <script src="script.js"></script>
+    <style>
+        span {
+            font-size: 13px;
+            text-align: center;
+        }
+
+        /* Circles */
+
+        #circleContainer, .circle  {
+            position: absolute; 
+            border-radius: 50% 50% 50% 50%; 
+            border-color: black; 
+            border-width: 1px; 
+            border-style: solid;
+        }
+
+        #circleContainer {
+            width: 370px; 
+            height: 370px;
+            margin: 40px;
+        }
+
+        .circle {
+            width: 50px; 
+            height: 50px; 
+            margin: 160px;
+        }
+
+        /* Rectangles */
+
+        #rectangleContainer, .rectangle  {
+            position: absolute; 
+            border-color: black; 
+            border-width: 1px; 
+            border-style: solid;
+        }
+
+        #rectangleContainer {
+            width: 200px; 
+            height: 400px;
+            margin: 40px 40px 40px 500px;
+        }
+
+        .rectangle {
+            width: 50px; 
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" id="addCircle" value="Add Circle" />
+    <input type="button" id="addRectangle" value="Add Rectangle" />
+
+
+    <div id="circleContainer"></div>
+
+    <div id="rectangleContainer"></div>
+
+    <script>
+        (function () {
+            document.getElementById('addRectangle').onclick = function () {
+                movingShapes.add("rect");
+            }
+
+            document.getElementById('addCircle').onclick = function () {
+                movingShapes.add("ellipse");
+            }
+        })();
+    </script>
+</body>
+</html>

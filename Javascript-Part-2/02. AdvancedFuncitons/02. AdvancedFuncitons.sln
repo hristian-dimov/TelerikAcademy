@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. DomModule", "01. DomModule\01. DomModule.csproj", "{A499B540-B81D-4EBF-9ADD-D2F867F01B45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. SpecialConsole", "03. SpecialConsole\03. SpecialConsole.csproj", "{5149E1EF-A11D-4CDC-A847-1D01DEB98A26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. MovingShapes", "02. MovingShapes\02. MovingShapes.csproj", "{D2A89343-928B-483D-9158-922D25549914}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A499B540-B81D-4EBF-9ADD-D2F867F01B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A499B540-B81D-4EBF-9ADD-D2F867F01B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A499B540-B81D-4EBF-9ADD-D2F867F01B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A499B540-B81D-4EBF-9ADD-D2F867F01B45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5149E1EF-A11D-4CDC-A847-1D01DEB98A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5149E1EF-A11D-4CDC-A847-1D01DEB98A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5149E1EF-A11D-4CDC-A847-1D01DEB98A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5149E1EF-A11D-4CDC-A847-1D01DEB98A26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A89343-928B-483D-9158-922D25549914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A89343-928B-483D-9158-922D25549914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A89343-928B-483D-9158-922D25549914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A89343-928B-483D-9158-922D25549914}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
