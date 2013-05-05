@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>01. Vehicle</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>You can see tests in the console.</h1>
+
+    <script>
+        (function () {
+            var speedUnits = " mph";
+
+            var wheels = [
+                new vehicles.Wheel(5),
+                new vehicles.Wheel(5),
+                new vehicles.Wheel(5),
+                new vehicles.Wheel(5)
+            ];
+
+            var propellingNozzles = [
+                new vehicles.PropellingNozzle(250, vehicles.AfterburnerState.OFF)
+            ];
+
+            var propellers = [
+                new vehicles.Propeller(3, vehicles.RotationDirection.CLOCKWISE),
+                new vehicles.Propeller(3, vehicles.RotationDirection.CLOCKWISE)
+            ];
+
+            var amphibianPropellers = [
+                new vehicles.Propeller(2, vehicles.RotationDirection.CLOCKWISE)
+            ];
+
+            var landVehicle = new vehicles.LandVehicle(50, wheels);
+            console.log("Land vehicle speed initially: " + landVehicle.speed + speedUnits);
+            landVehicle.accelerate();
+            console.log("Land vehicle speed after acceleration: " + landVehicle.speed + speedUnits);
+
+            var aircraft = new vehicles.Aircraft(100, propellingNozzles);
+            console.log("Aircraft speed initially: " + aircraft.speed + speedUnits);
+            aircraft.accelerate();
+            console.log("Aircraft speed after acceleration with afterburners deactivated: " + aircraft.speed + speedUnits);
+
+            aircraft.switchAfterburners(vehicles.AfterburnerState.ON);
+            aircraft.accelerate();
+            console.log("Aircraft speed after acceleration with afterburners activated: " + aircraft.speed + speedUnits);
+
+            var watercraft = new vehicles.Watercraft(25, propellers);
+            console.log("Watercraft speed initially: " + watercraft.speed + speedUnits);
+
+            watercraft.accelerate();
+            console.log("Watercraft speed after acceleration with propellers rotating clockwise: " + watercraft.speed + speedUnits);
+
+            watercraft.setPropellersRotationDirection(vehicles.RotationDirection.COUNTERCLOCKWISE);
+            watercraft.accelerate();
+            console.log("Watercraft speed after acceleration with propellers rotating counterclockwise: " + watercraft.speed + speedUnits);
+
+            var amphibian = new vehicles.Amphibian(5, amphibianPropellers, wheels, vehicles.AmphibianMode.LAND);
+            console.log("Amphibian speed initially: " + amphibian.speed + speedUnits);
+
+            amphibian.accelerate();
+            console.log("Amphibian speed after acceleration on land: " + amphibian.speed + speedUnits);
+
+            amphibian.mode = vehicles.AmphibianMode.WATER;
+            amphibian.accelerate();
+            console.log("Amphibian speed after acceleration on water with propellers rotating clockwise: " + amphibian.speed + speedUnits);
+
+            amphibian.setPropellersRotationDirection(vehicles.RotationDirection.COUNTERCLOCKWISE);
+            amphibian.accelerate();
+            console.log("Amphibian speed after acceleration on water with propellers rotating counterclockwise: " + amphibian.speed + speedUnits);
+        })();
+    </script>
+</body>
+</html>
