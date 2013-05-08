@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. ComparePart-1", "01. ComparePart-1\01. ComparePart-1.csproj", "{D247556C-BF18-4CDD-AF23-90C47C7CCAE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. ComparePart-2", "03. ComparePart-2\03. ComparePart-2.csproj", "{BBF0B94F-FD6E-4D33-968C-404E5984F18E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D247556C-BF18-4CDD-AF23-90C47C7CCAE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D247556C-BF18-4CDD-AF23-90C47C7CCAE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D247556C-BF18-4CDD-AF23-90C47C7CCAE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D247556C-BF18-4CDD-AF23-90C47C7CCAE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF0B94F-FD6E-4D33-968C-404E5984F18E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF0B94F-FD6E-4D33-968C-404E5984F18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF0B94F-FD6E-4D33-968C-404E5984F18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF0B94F-FD6E-4D33-968C-404E5984F18E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
