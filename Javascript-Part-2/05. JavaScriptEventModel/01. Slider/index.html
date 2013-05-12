@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>01. Slider</title>
+    <style>
+        body {
+            width: 100%;
+        }
+
+        #wrapper {
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .arrows {
+            border: 1px solid #000;
+            border-radius:7px;
+            font-family:Trebuchet MS;
+            font-size: 17px;
+            padding: 5px 10px;
+            text-decoration: none;
+            width: 80px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .arrows:hover {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <a href="#" class="arrows" id="left"><< Left</a>
+
+        <img src="images/girl1.jpg" id="image" />
+
+        <a href="#" class="arrows" id="right">Right >></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
