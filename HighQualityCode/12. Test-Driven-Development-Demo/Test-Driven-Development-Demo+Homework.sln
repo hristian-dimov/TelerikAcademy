@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker.Test", "..\PokerTest\Poker.Test.csproj", "{D5DCA781-DC66-4CC2-B7EC-B5D4876AFA72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker", "Poker\Poker.csproj", "{F191BB1D-DBC6-469C-9DCD-0075D92C4D8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5DCA781-DC66-4CC2-B7EC-B5D4876AFA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5DCA781-DC66-4CC2-B7EC-B5D4876AFA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5DCA781-DC66-4CC2-B7EC-B5D4876AFA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5DCA781-DC66-4CC2-B7EC-B5D4876AFA72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F191BB1D-DBC6-469C-9DCD-0075D92C4D8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F191BB1D-DBC6-469C-9DCD-0075D92C4D8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F191BB1D-DBC6-469C-9DCD-0075D92C4D8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F191BB1D-DBC6-469C-9DCD-0075D92C4D8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
