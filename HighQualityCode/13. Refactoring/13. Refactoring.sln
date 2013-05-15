@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalkInMatrix", "WalkInMatrix\WalkInMatrix.csproj", "{BE44DC83-8041-411A-94A1-2DE1E0E632D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalkInMatrixTest", "WalkInMatrixTest\WalkInMatrixTest.csproj", "{570DE79C-FA82-469A-A7C0-13E71F3DC531}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE44DC83-8041-411A-94A1-2DE1E0E632D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE44DC83-8041-411A-94A1-2DE1E0E632D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE44DC83-8041-411A-94A1-2DE1E0E632D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE44DC83-8041-411A-94A1-2DE1E0E632D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{570DE79C-FA82-469A-A7C0-13E71F3DC531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{570DE79C-FA82-469A-A7C0-13E71F3DC531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{570DE79C-FA82-469A-A7C0-13E71F3DC531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{570DE79C-FA82-469A-A7C0-13E71F3DC531}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
