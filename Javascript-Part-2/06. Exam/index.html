@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="script.js"></script>
+    <script src="local-storage-extensions.js"></script>
+</head>
+<body>
+    <div id="grid"></div>
+
+    <script type="text/javascript">
+        //escapeHtml function for escaping the strings
+
+        //Task 1
+        var schoolsGrid = controls.getGridView("#grid");
+        schoolsGrid.addHeader("Name", "Localtion", "Total Students", "Speciality");
+        schoolsGrid.addRow("PMG", "Burgas", "400", "Math");
+        schoolsGrid.addRow("TUES", "Sofia", "500", "IT");
+        schoolsGrid.render();
+
+        //Task 2
+        var academyRow = schoolsGrid.addRow("Telerik Academy", "Sofia", "5000", "IT");
+        var academyGrid = academyRow.getNestedGridView();
+        academyGrid.addHeader("Title", "Start Date", "Total Students");
+        academyGrid.addRow("JS 2", "11-april-2013", "400");
+        academyGrid.addRow("SEO", "15-may-2013", "1300");
+
+        var innerTelerikRow = academyGrid.addRow("Slice and<br /> Dice", "05-april-2013", "500");
+        var innerTelerikGrid = innerTelerikRow.getNestedGridView();
+        innerTelerikGrid.addHeader("Yo", "Yo", "100");
+        innerTelerikGrid.addRow("Sup", "Sup", "15");
+   
+        schoolsGrid.render();
+
+        //Task 4 - hardcoded sample of repository
+
+        //var schoolsData = [
+        //    { "Name": "PMG", "Location": "Burgas", "CoursesCount": "0", "Specialty": "Math" },
+        //    { "Name": "TUES", "Location": "Sofia", "CoursesCount": "2", "Specialty": "IT" },
+        //    { "Name": "Telerik Academy", "Location": "Sofia", "CoursesCount": "3", "Specialty": "IT" }
+        //];
+        //
+
+        //Task 5 - saved in localStorage
+        var schoolsData = schoolsGrid.getGridViewData();
+        schoolRepository.save("schools-repository", schoolsData);
+
+        //console.log(schoolsData);
+    </script>
+</body>
+</html>
