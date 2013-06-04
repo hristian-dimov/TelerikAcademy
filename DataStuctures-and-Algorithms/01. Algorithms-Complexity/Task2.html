@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Algorithm Complexity</title>
+</head>
+<body>
+	<section>
+		<article>
+			<header>
+				Ex. 2)
+				What is the expected running time of the following C# code? Explain why.
+				Assume the input matrix has size of n * m.
+			</header>
+			
+			<p>
+				<pre>
+long CalcCount(int[,] matrix)
+{
+    long count = 0;
+    for (int row=0; row<matrix.GetLength(0); row++)
+        if (matrix[row, 0] % 2 == 0)
+            for (int col=0; col<matrix.GetLength(1); col++)
+                if (matrix[row,col] > 0)
+                    count++;
+    return count;
+}
+				</pre>
+			</p>
+			
+			<footer>
+				<h1>Answer:</h1>
+				<p>
+					Because for every row with first element which is even  
+					we check all columns of row
+					and therefore time is n/2 * m
+					No improving is available - this is optimal code!
+				</p>
+			</footer>
+		</article>
+	</section>
+</body>
+</html>

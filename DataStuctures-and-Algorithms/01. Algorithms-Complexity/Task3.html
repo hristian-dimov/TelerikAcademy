@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Algorithm Complexity</title>
+</head>
+<body>
+	<section>
+		<article>
+			<header>
+				Ex. 3) 
+				* What is the expected running time of the following C# code? Explain why.
+				Assume the input matrix has size of n * m.
+			</header>
+			
+			<p>
+				<pre>
+long CalcSum(int[,] matrix, int row)
+{
+    long sum = 0;
+    for (int col = 0; col < matrix.GetLength(0); col++) 
+        sum += matrix[row, col];
+    if (row + 1 < matrix.GetLength(1)) 
+        sum += CalcSum(matrix, row + 1);
+    return sum;
+}
+
+Console.WriteLine(CalcSum(matrix, 0));
+				</pre>
+			</p>
+			
+			<footer>
+				<h1>Answer:</h1>
+				<p>
+					For every column we recursive call function for each row in the column - so answer is 0(n * m)
+				</p>
+			</footer>
+		</article>
+	</section>
+</body>
+</html>

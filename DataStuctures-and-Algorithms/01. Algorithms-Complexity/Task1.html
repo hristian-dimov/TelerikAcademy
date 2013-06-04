@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Algorithm Complexity</title>
+</head>
+<body>
+	<section>
+		<article>
+			<header>
+				Ex. 1) 
+				What is the expected running time of the following C# code? Explain why. Assume the array's size is n.
+			</header>
+			
+			<p>
+				<pre>
+long Compute(int[] arr)
+{
+	long count = 0;
+	
+	for (int i = 0; i < arr.Length; i++)
+	{
+		int start = 0, end = arr.Length - 1;
+		while (start < end)
+		{
+			if (arr[start] < arr[end])
+			{
+				start++;
+				count++;
+			}
+			else
+			{
+				end--;
+			}
+		}
+	}
+	return count;
+}
+				</pre>
+			</p>
+			
+			<footer>
+				<h1>Answer:</h1>
+				<p>The outer 'for' loop is iterating <strong>n</strong> times and on every step the inner 'while' loop is iterating another <strong>n</strong> times
+				so the answer is 0(n*n)
+				</p>
+			</footer>
+		</article>
+	</section>
+</body>
+</html>
