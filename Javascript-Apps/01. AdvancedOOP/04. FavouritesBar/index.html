@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="scripts/Class.js"></script>
+    <script src="scripts/FavBar.js"></script>
+</head>
+<body>
+    <script>
+        var telerikAcademy = new Url("Telerik", "https://telerikacademy.com/");
+        var google = new Url("Google", "https://www.google.bg/");
+
+        var folder = new Folder("Top Sites ( click on me )", [telerikAcademy, google]);
+
+        var notInFolder = new Url("Facebook", "https://facebook.com/");
+
+        var favouritesBar = new FavBar("favBar", [folder], [notInFolder]);
+
+        favouritesBar.render();
+    </script>
+</body>
+</html>

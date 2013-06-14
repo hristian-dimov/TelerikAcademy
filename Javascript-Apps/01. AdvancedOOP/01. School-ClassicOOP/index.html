@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="scripts/Class.js"></script>
+    <script src="scripts/Person.js"></script>
+    <script src="scripts/School.js"></script>
+</head>
+<body>
+    <script>
+        var firstStudent = new Student("Pesho", "Mentata", 12, 6);
+        var secondStudent = new Student("Gosho", "Goshov", 12, 6);
+
+        var firstTeacher = new Teacher("Pretty", "Lady", 25, "Math");
+
+        var math = new Course("Biology", 25, [firstStudent, secondStudent], firstTeacher);
+
+        var school = new School("23 SOU", "Sofia", [math]);
+
+        console.log(firstStudent.introduce());
+        console.log(firstTeacher.introduce());
+    </script>
+</body>
+</html>
