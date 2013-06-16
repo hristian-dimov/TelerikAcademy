@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="scripts/Class.js"></script>
+    <script src="scripts/Slider.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <script>
+        var firstSlide = new SlideContent("First girl", "First girl", "images/girl1.jpg");
+        var secondSlide = new SlideContent("Second girl(s)", "Second girl(s)", "images/girl2.jpg");
+        var thirdSlide = new SlideContent("Third girl", "Third girl", "images/girl3.jpg");
+        var fourthSlide = new SlideContent("Fourth girl", "Fourth girl", "images/girl4.jpg");
+
+        var slider = new Slider("slider");
+        slider.addSlide(firstSlide);
+        slider.addSlide(secondSlide);
+        slider.addSlide(thirdSlide);
+        slider.addSlide(fourthSlide);
+        slider.render();
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+</head>
+<body>
+    <div id="test">Middle</div>
+
+    <script>
+        function appendBefore(selector, element) {
+            $(selector).parent().prepend(element);
+        }
+
+        function appendAfter(selector, element) {
+            $(selector).parent().append(element);
+        }
+
+        var prepended = $("<div></div>").text("Prepended");
+        appendBefore("#test", prepended);
+
+        var appended = $("<div></div>").text("Appended");
+        appendAfter("#test", appended);
+    </script>
+</body>
+</html>

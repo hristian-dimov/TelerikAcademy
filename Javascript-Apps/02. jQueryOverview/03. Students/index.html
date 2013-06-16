@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        var array = [
+            { fname: "Peter", lname: "Ivanov", grade: 3 },
+            { fname: "Milena", lname: "Grigorova", grade: 6 },
+            { fname: "Gergana", lname: "Borisova", grade: 12 },
+            { fname: "Boyko", lname: "Petrov", grade: 7 }
+        ];
+
+        var tableHeaders = [
+            "First name", "Last name", "Grade"
+        ];
+        
+        var table = $("<table border='1px'></table>");
+        var tableRowHeaders = $("<tr></tr>");
+
+        $(table).append(tableRowHeaders);
+
+        for (var i = 0; i < tableHeaders.length; i++) {
+            $(tableRowHeaders).append("<th>" + tableHeaders[i] + "</th>");
+        }
+
+        for (var i = 0; i < array.length; i++) {
+            var tableRow = $("<tr></tr>");
+            $(table).append(tableRow);
+
+            $(tableRow).append("<td>" + array[i].fname + "</td>");
+            $(tableRow).append("<td>" + array[i].lname + "</td>");
+            $(tableRow).append("<td>" + array[i].grade + "</td>");
+        }
+
+        $('#container').append(table);
+    </script>
+</body>
+</html>
