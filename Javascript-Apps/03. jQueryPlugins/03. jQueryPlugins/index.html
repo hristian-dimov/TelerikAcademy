@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <style>
+            ul li ul {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="treeView">
+            <li>
+                Item
+                <ul>
+                    <li>
+                        Sub-Menu-1
+                        <ul>
+                            <li>Sub-Menu-2</li>
+                            <li>Sub-Menu-2</li>
+                        </ul>
+                    </li>
+                    <li>Sub-Menu-1</li>
+                    <li>Sub-Menu-1</li>
+                    <li>
+                        Sub-Menu-1
+                        <ul>
+                            <li>Sub-Menu-2</li>
+                            <li>Sub-Menu-2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Item</li>
+            <li>
+                Item
+                <ul>
+                    <li>
+                        Sub-Menu-1
+                        <ul>
+                            <li>Sub-Menu-2</li>
+                            <li>Sub-Menu-2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Item</li>
+        </ul>
+
+        <script>
+            $(document).ready(function () {
+                $('#treeView').treeView();
+            });
+        </script>
+    </body>
+</html>
