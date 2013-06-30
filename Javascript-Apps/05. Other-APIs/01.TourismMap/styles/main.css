@@ -1,0 +1,91 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+	background: #a90329; 
+	background-repeat: no-repeat;
+}
+
+#wrapper{
+	width: 1100px;
+	margin: 0 auto;
+}
+h1 {
+	color: white;
+	padding-left: 20px;
+	text-shadow: 2px 2px 3px #000;
+	margin: 10px 0 0 0;
+	font-size: 40px;
+}
+
+li {
+	color: white;
+}
+#map-canvas {
+    height: 500px;
+    width: 800px;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .7);
+    margin: 20px 0 0 20px;
+}
+button {
+	width: 100px;
+	height: 30px;
+}
+#nav {
+ 	float: left;
+	height: 500px;
+	min-width: 215px;
+	background: #ffffff;
+	background-repeat: no-repeat;
+	background: #a84157; /* Old browsers */
+background: -moz-linear-gradient(top,  #a84157 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a84157), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #a84157 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #a84157 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #a84157 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #a84157 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a84157', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+
+
+	margin-top: 20px;
+	
+	border: 2px solid black;
+	-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+#nav ul {
+	list-style: none;
+	padding-top: 30px;
+	padding-left: 20px;
+}
+#nav li {
+	cursor: pointer;
+	line-height: 30px;
+	font-style: italic;
+}
+#nav li:hover {
+	text-decoration: underline;
+}
+#map-canvas {
+	float: left;
+}
+#btn-prev, #btn-next {
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 48px;
+	border: none;
+	margin: 1px;
+	cursor: pointer;
+	float: right;
+}
+#btn-prev {
+	background: url('../images/prev.png');
+}
+#btn-next {
+	background: url('../images/next.png');
+	margin-right: 30px;
+}
