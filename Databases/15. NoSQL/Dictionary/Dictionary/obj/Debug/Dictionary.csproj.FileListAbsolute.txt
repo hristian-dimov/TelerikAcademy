@@ -1,0 +1,10 @@
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\06.Databases\Dictionary\Dictionary\bin\Debug\Dictionary.exe.config
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\06.Databases\Dictionary\Dictionary\bin\Debug\Dictionary.exe
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\06.Databases\Dictionary\Dictionary\bin\Debug\Dictionary.pdb
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\06.Databases\Dictionary\Dictionary\bin\Debug\MongoDB.Bson.dll
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\06.Databases\Dictionary\Dictionary\bin\Debug\MongoDB.Driver.dll
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\06.Databases\Dictionary\Dictionary\bin\Debug\MongoDB.Bson.xml
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\06.Databases\Dictionary\Dictionary\bin\Debug\MongoDB.Driver.xml
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\06.Databases\Dictionary\Dictionary\obj\Debug\Dictionary.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\06.Databases\Dictionary\Dictionary\obj\Debug\Dictionary.exe
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\06.Databases\Dictionary\Dictionary\obj\Debug\Dictionary.pdb
