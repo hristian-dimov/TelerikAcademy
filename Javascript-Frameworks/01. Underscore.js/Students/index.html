@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <script src="Scripts/class.js"></script>
+        <script src="Scripts/underscore.min.js"></script>
+        <script src="Scripts/underscore.js"></script>
+    </head>
+    <body>
+        <script>
+            var Person = Class.create({
+                init: function (fname, lname) {
+                    this.fname = fname;
+                    this.lname = lname;
+                },
+                fullname: function () {
+                    return this.fname + " " + this.lname;
+                }
+            });
+
+            var Student = Person.extend({
+                init: function (fname, lname, age, mark) {
+                    this._super(fname, lname);
+                    this.age = age;
+                    this.mark = mark;
+                }
+            });
+
+            var Animal = Class.create({
+                init: function (spicie, type, legs) {
+                    this.spicie = spicie,
+                    this.type = type,
+                    this.legs = legs
+                },
+                toString: function () {
+                    return "type " + this.type + " legs " + this.legs
+                }
+            });
+
+            var Book = Class.create({
+                init: function (author, book) {
+                    this.author = author,
+                    this.book = book;
+                },
+            });
+
+            var students = [
+                new Student("Doncho", "Minkov", 18, 3),
+                new Student("Joro", "Georgiev", 48, 4),
+                new Student("Niki", "Kostov", 21, 5),
+                new Student("Svetlin", "Nakov", 16, 5, 75),
+                new Student("Ivaylo", "Kenov", 87, 6)
+            ];
+
+            var animals = [
+                new Animal("mammal", "Human", 2),
+                new Animal("mammal", "Dog", 4),
+                new Animal("insect", "Spider", 8),
+                new Animal("bird", "Pelican", 2),
+                new Animal("bird", "eagle", 2)
+            ];
+
+            var books = [
+                new Book("Suzanne Collins", "The Hunger Games"),
+                new Book("J.K. Rowling", "Harry Potter and the Chamber of Secrets"),
+                new Book("J.K. Rowling", "Harry Potter and the Prisoner of Azkaban")
+            ];
+
+            var people = [
+                new Person("Doncho", "Minkov"),
+                new Person("Doncho", "Donchov"),
+                new Person("Svetlin", "Svetlinov"),
+                new Person("Svetlin", "Kenov"),
+                new Person("Svetlin", "Nakov"),
+                new Person("Ivaylo", "Kenov")
+            ];
+            
+            //TASK 1
+            console.log("==============Task 1==============");
+            var filteredStudents = _.filter(students, function (student) {
+                return student.fname < student.lname;
+            });
+            
+            var sortedStudents = _.sortBy(filteredStudents, 'fullname');
+            sortedStudents = sortedStudents.reverse();
+            
+            _.each(sortedStudents, function (student) {
+                console.log(student.fullname());
+            });
+            
+            //TASK 2
+            console.log("==============Task 2==============");
+            var filterByAge = _.filter(students, function (student) {
+                return student.age >= 18 && student.age <= 24
+            });
+            
+            _.each(filterByAge, function (student) {
+                console.log(student.fullname());
+            });
+            
+            //TASK 3
+            console.log("==============Task 3==============");
+            var studentWithHighestMark = _.max(students, function (student) {
+                return student.mark;
+            });
+            
+            console.log(studentWithHighestMark.fullname() + " - " + studentWithHighestMark.mark);
+            
+            //TASK 4
+            console.log("==============Task 4==============");
+            var groupedAnimals = _.groupBy(animals, 'spicie');
+            
+            var sortedAnimals = _.sortBy(groupedAnimals, function (animal) { 
+                return animal[0].legs
+            });
+            
+            _.each(sortedAnimals, function (animal) {
+                console.log(animal.toString());
+            });
+            
+            //TASK 5
+            console.log("==============Task 5==============");
+            var sumLegs = _.reduce(animals, function (memo, a) {
+                return memo + a.legs;
+            }, 0);
+            
+            console.log("Legs count: " + sumLegs);
+
+            //TASK 6
+            console.log("==============Task 6==============");
+            var mostFamous = _.max(
+                _.groupBy(books, function (book) {
+                    return book.author;
+                })
+                , function (bookGroupd) {
+                    return bookGroupd.length;
+                });
+
+            console.log(_.first(mostFamous).author);
+
+            //TASK 7
+            console.log("==============Task 7==============");
+
+            //firstName
+            var fNamesCountBy = _.countBy(people, function (p) {
+                return p.fname;
+            });
+            var fNameIndex = _.max(fNamesCountBy);
+            fNamesCountBy = _.invert(fNamesCountBy);
+            var maxFNameGroupName = (fNamesCountBy[fNameIndex]);
+
+            console.log(maxFNameGroupName);
+
+            //lastName
+
+            var lNamesCountBy = _.countBy(people, function (p) {
+                return p.lname;
+            });
+            var lNameIndex = _.max(lNamesCountBy);
+            lNamesCountBy = _.invert(lNamesCountBy);
+            var maxLNameGroupName = (lNamesCountBy[lNameIndex]);
+
+            console.log(maxLNameGroupName);
+        </script>
+    </body>
+</html>
