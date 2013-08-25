@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <script src="Scripts/class.js"></script>
+        <script src="Scripts/mustache.js"></script>
+        <script src="Scripts/jquery-2.0.3.js"></script>
+        <script src="Scripts/http-requester.js"></script>
+        <script src="Scripts/list-view.js"></script>
+
+        <style>
+            .marks
+            {
+                background-color: #d5fef1;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content"></div>
+        <script type="x-mustache-template" id="students-template">	
+            <p class="student"><strong>{{name}}</strong></p>
+
+            <div class="marks" style="display: none">
+                <ul>
+                    {{#marks}}
+                        <li>
+                            {{subject}}: <strong>{{score}}</strong>
+                        </li>
+                    {{/marks}}
+                    {{^marks}}	
+                        <li>
+                            This student has no marks, yet	
+                        </li>
+                    {{/marks}}
+                </ul>
+            </div>
+        </script>
+        
+        <script type="text/javascript">
+            var students = httpRequester.getJSON("http://localhost:53375/api/students", function (data) {
+                var studentTemplate = Mustache.compile(document.getElementById("students-template").innerHTML);
+                
+                var listView = controls.getListView(data);
+                var listViewHtml = listView.render(studentTemplate);
+                
+                $('#content').html(listViewHtml);
+                
+                $(".student").on("click", function () {
+                    $(this).next(".marks").slideToggle(400);
+                });
+            }, function (error) {
+                console.log(error);
+            });
+        </script>
+    </body>
+</html>
