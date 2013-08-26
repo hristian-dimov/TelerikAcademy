@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <script src="Scripts/libs/require.js" data-main="Scripts/app-config"></script>
+        <style>
+            ul {
+                list-style-type: none;
+            }
+            
+            li {
+                height: 20px;
+                width: 250px;
+                padding-left: 30px;
+                padding-top: 25px;
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <script type="x-mustache-template" id="students-template">	
+            <a href="#" id="{{id}}" class="clickable">{{name}}</a>
+        </script>
+        <script type="x-mustache-template" id="marks-template">	
+            {{subject}}: {{score}}
+        </script>
+    </body>
+</html>
