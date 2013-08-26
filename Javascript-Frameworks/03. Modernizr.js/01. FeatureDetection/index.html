@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <script src="Scripts/jquery-2.0.3.js"></script>
+        <script src="Scripts/modernizr-2.6.2.js"></script>
+        <script src="Scripts/ua-parser.js"></script>
+        <style>
+            #info, table
+            {
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            table
+            {
+                border: 1px solid #ccc;
+            }
+            
+            table thead th
+            {
+                font-weight: bold;
+                text-align: center;
+                border-bottom: 1px solid #ccc;
+            }
+            
+            table tbody th
+            {
+                font-family: monospace;
+                border-right: 1px solid #ccc;
+            }
+            
+            table td,
+            table th
+            {
+                padding: .25em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="info"></div><br />
+                    
+        <table id="features">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Supported?</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <script>
+            var UAParser = new UAParser();
+            
+            var browserInfo = UAParser.getBrowser();
+            
+            var osInfo = UAParser.getOS();
+            
+            var deviceInfo = UAParser.getDevice();
+            
+            var infoContainer = document.querySelector("#info");
+            
+            infoContainer.innerHTML += "<div>Browser( version ): " + browserInfo.name + " ( " + browserInfo.version + " )</div>";
+            
+            infoContainer.innerHTML += "<div>OS( version ): " + osInfo.name + " ( " + osInfo.version + " )</div>";
+                
+            infoContainer.innerHTML += "<div>Device: " + deviceInfo.model + "</div>";
+                
+            jQuery(function ($) {
+                var target = $('#features > tbody');
+                    
+                var traverse = function (object, prefix) {
+                    prefix = prefix ? prefix + '.' : '';
+                        
+                    for (property in object) {
+                        if (typeof object[property] == 'object') {
+                            traverse(object[property], prefix + property);
+                        }
+                        else if (typeof object[property] == 'boolean') {
+                            var
+                            tr = $('<tr />'),
+                            name = $('<th />').text(prefix + property),
+                            value = $('<td />').text(object[property] ? 'Yes' : 'Nope');
+                
+                            target.append(tr.append(name).append(value));
+                        }
+                    }
+                };
+    
+                traverse(Modernizr, 'Modernizr');
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <script src="Scripts/jquery-2.0.3.js"></script>
+        <script src="Scripts/modernizr.custom.55271.js"></script>
+    </head>
+    <body>
+        <canvas id='canvas' width='600' height='400'>Canvas not supported</canvas>
+        <div id="geo"></div>
+
+        <script>
+            Modernizr.load([
+                {
+                    test: Modernizr.canvas,
+                    nope: 'Scripts/excanvas.js',
+                    complete: function () {
+                        var canvas = document.getElementById('canvas'),
+                        context = canvas.getContext('2d');
+
+                        context.lineWidth = 30;
+
+                        context.strokeRect(75, 100, 200, 200);
+                        context.fillRect(325, 100, 200, 200); 
+                    }
+                },
+                {
+                    test: Modernizr.localstorage,
+                    nope: 'Scripts/StoragePolifill.js',
+                    complete: function () {
+                        localStorage.setItem("TestKey", "TestValue");
+                    }
+                },
+                {
+                    test: Modernizr.geolocation,
+                    nope: 'Scripts/js-webshim/minified/polyfiller.js',
+                    complete: function () {
+                        var geoContainer = document.getElementById("geo");
+                        if (!navigator.geolocation) {
+                            $.webshims.polyfill();
+                        }
+            
+                        window.navigator.geolocation.getCurrentPosition(showPosition);
+
+                        function showPosition(position) {
+                            geoContainer.innerHTML = "Latitude: " + position.coords.latitude +
+                                          "<br>Longitude: " + position.coords.longitude;
+                        }
+                    }
+                }
+            ]);
+        </script>
+    </body>
+</html>
+    

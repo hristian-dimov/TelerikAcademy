@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. FeatureDetection", "01. FeatureDetection\01. FeatureDetection.csproj", "{FAE57E2A-8F9B-4B98-B231-C15E05DE5DA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. FeatureFallback", "02. FeatureFallback\02. FeatureFallback.csproj", "{6E554028-2E0E-485E-A5EA-05914003204E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. DatePicker", "03. DatePicker\03. DatePicker.csproj", "{FE2C61E8-C056-4874-9A77-42ADF0F8D5D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAE57E2A-8F9B-4B98-B231-C15E05DE5DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAE57E2A-8F9B-4B98-B231-C15E05DE5DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAE57E2A-8F9B-4B98-B231-C15E05DE5DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAE57E2A-8F9B-4B98-B231-C15E05DE5DA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E554028-2E0E-485E-A5EA-05914003204E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E554028-2E0E-485E-A5EA-05914003204E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E554028-2E0E-485E-A5EA-05914003204E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E554028-2E0E-485E-A5EA-05914003204E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE2C61E8-C056-4874-9A77-42ADF0F8D5D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE2C61E8-C056-4874-9A77-42ADF0F8D5D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE2C61E8-C056-4874-9A77-42ADF0F8D5D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE2C61E8-C056-4874-9A77-42ADF0F8D5D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
