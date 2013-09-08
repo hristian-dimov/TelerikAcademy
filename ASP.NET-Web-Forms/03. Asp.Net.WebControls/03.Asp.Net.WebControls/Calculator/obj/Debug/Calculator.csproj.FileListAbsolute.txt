@@ -1,0 +1,5 @@
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\08.ASP.NET Web Forms\03.Asp.Net.WebControls\Calculator\bin\Calculator.dll
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\08.ASP.NET Web Forms\03.Asp.Net.WebControls\Calculator\bin\Calculator.pdb
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\08.ASP.NET Web Forms\03.Asp.Net.WebControls\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\08.ASP.NET Web Forms\03.Asp.Net.WebControls\Calculator\obj\Debug\Calculator.dll
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\08.ASP.NET Web Forms\03.Asp.Net.WebControls\Calculator\obj\Debug\Calculator.pdb

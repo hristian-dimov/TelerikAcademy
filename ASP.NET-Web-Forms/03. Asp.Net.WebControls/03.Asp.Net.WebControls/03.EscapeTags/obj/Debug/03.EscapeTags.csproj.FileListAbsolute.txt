@@ -1,0 +1,4 @@
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\08.ASP.NET Web Forms\03.Asp.Net.WebControls\03.EscapeTags\bin\03.EscapeTags.dll
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\08.ASP.NET Web Forms\03.Asp.Net.WebControls\03.EscapeTags\bin\03.EscapeTags.pdb
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\08.ASP.NET Web Forms\03.Asp.Net.WebControls\03.EscapeTags\obj\Debug\03.EscapeTags.dll
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\08.ASP.NET Web Forms\03.Asp.Net.WebControls\03.EscapeTags\obj\Debug\03.EscapeTags.pdb

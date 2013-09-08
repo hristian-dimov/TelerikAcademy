@@ -1,0 +1,5 @@
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\08.ASP.NET Web Forms\03.Asp.Net.WebControls\04.RegisterStudent\bin\04.RegisterStudent.dll
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\08.ASP.NET Web Forms\03.Asp.Net.WebControls\04.RegisterStudent\bin\04.RegisterStudent.pdb
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\08.ASP.NET Web Forms\03.Asp.Net.WebControls\04.RegisterStudent\obj\Debug\04.RegisterStudent.dll
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\08.ASP.NET Web Forms\03.Asp.Net.WebControls\04.RegisterStudent\obj\Debug\04.RegisterStudent.pdb
+C:\Users\Adrian\Documents\Visual Studio 2012\Projects\ProgrammingTrack\08.ASP.NET Web Forms\03.Asp.Net.WebControls\04.RegisterStudent\obj\Debug\04.RegisterStudent.csprojResolveAssemblyReference.cache
