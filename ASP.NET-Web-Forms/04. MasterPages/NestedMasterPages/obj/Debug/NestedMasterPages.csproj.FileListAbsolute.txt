@@ -1,0 +1,5 @@
+D:\VisualSoutions-2013\04. MasterPages\NestedMasterPages\bin\NestedMasterPages.dll.config
+D:\VisualSoutions-2013\04. MasterPages\NestedMasterPages\bin\NestedMasterPages.dll
+D:\VisualSoutions-2013\04. MasterPages\NestedMasterPages\bin\NestedMasterPages.pdb
+D:\VisualSoutions-2013\04. MasterPages\NestedMasterPages\obj\Debug\NestedMasterPages.dll
+D:\VisualSoutions-2013\04. MasterPages\NestedMasterPages\obj\Debug\NestedMasterPages.pdb
