@@ -1,0 +1,38 @@
+﻿<h1>Appointments</h1>
+<ul id="app-Menu">
+    <li><a href="/#/appointments/create">Create new Appointment</a></li>
+    <li><a href="/#/appointments">All Appointments</a></li>
+    <li><a href="/#/appointments/comming">Comming Appointments</a></li>
+    <li><a href="/#/appointments/today">Today Appointments</a></li>
+    <li><a href="/#/appointments/current">Current Appointments</a></li>
+    <li>Enter date: <input type="text" id="searchDate" placeholder="eg. 13/09/2013" value="" /> <button id="searchByDate">Search</button></li>
+</ul>
+
+<table id="app-Info">
+    <tr>
+        <th>Subject</th>
+        <th>Description</th>
+        <th>AppointmentDate</th>
+        <th>Duration</th>
+        <th>State</th>
+    </tr>
+    <tbody data-template="appointment-template" data-bind="source: appointments">
+    </tbody>
+</table>
+
+<script type="text/x-kendo-template" id="appointment-template">
+    <tr>
+        <td>#= subject # </td>
+        <td>#= description # </td>
+        <td>#= appointmentDate # </td>
+        <td>#= duration # </td>
+        <td>#= state # </td>
+    </tr>
+</script>
+
+<script>
+    $('#searchByDate').click(function () {
+        var date = $('#searchDate').val();
+        location.href = '#/appointments/' + date;
+    });
+</script>

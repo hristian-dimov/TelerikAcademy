@@ -1,0 +1,36 @@
+﻿ul#app-Menu, ul#lists-Menu {
+    padding-left: 0px;
+}
+
+#app-Menu li, #lists-Menu li, #main-menu li {
+    display: inline;
+    padding-right: 30px;
+}
+
+#app-Info th {
+    width: 200px;
+    background: black;
+    color: white;
+}
+
+#app-Info td {
+    background: grey;
+    text-align: center;
+}
+
+#lists-Info th {
+    width: 400px;
+    background: black;
+    color: white;
+}
+
+#lists-Info td {
+    padding: 10px;
+    background: grey;
+    height: 50px;
+}
+
+#lists-Info td ul {
+    padding-left: 0px;
+    list-style: none;
+}

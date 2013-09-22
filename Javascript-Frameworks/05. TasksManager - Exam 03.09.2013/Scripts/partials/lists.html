@@ -1,0 +1,49 @@
+﻿<h1>Todo Lists</h1>
+<div>
+    <a href='#/lists/create'>[ Create new todo LIST]</a>
+</div><br />
+
+<table id="lists-Info">
+    <tr>
+        <th>Title</th>
+        <th>Todos</th>
+        <th>Create new TODO</th>
+    </tr>
+    <tbody data-template="list-template" data-bind="source: lists">
+    </tbody>
+</table>
+
+<script type="text/x-kendo-template" id="list-template">
+    <tr>
+        <td><a href='\#/lists/#= id #/todos'>#= title #</a></td>
+        <td>
+            #if(todos.length > 0) { #
+                <ul>
+                # for(var i = 0; i < todos.length; i++) { #
+                    # var state = (todos[i].isDone == false) ? "" : "checked='checked'"; #
+                    <li>#= todos[i].text # <input type='checkbox' #= state # data-bind="click: changeStatus" data-todoId='#= todos[i].id #' /></li>
+                # } #
+                </ul>
+            # } else { #
+                <span>[ No todos for this list ]</span>
+            # } #
+        </td>
+
+        # if(location.href.indexOf('todos') != -1) { #
+            <td>
+                <a href='\#/lists/#= id #/create'>[ Create new TODO ]</a>
+            </td>
+        # } #
+    </tr>
+    <br />
+</script>
+
+<script>
+    $(document).ready(function () {
+        if (location.href.indexOf('todos') != -1) {
+            $('#lists-Info th:last-child').show();
+        } else {
+            $('#lists-Info th:last-child').hide();
+        }
+    });
+</script>
