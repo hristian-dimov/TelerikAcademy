@@ -1,0 +1,48 @@
+﻿body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+/* styles for removing the background from form */
+.no-color {
+  background-color: white;
+  border-style:none;
+}
+
+.catRow {
+    vertical-align: top;
+    width: 33%;
+    display: inline-block;
+}
+
+.container div {
+    margin-bottom: 10px;
+}
+
+#MainContent_BookTitle {
+    background: none repeat scroll 0 0 #EEEEEE;
+    font-size: 16pt;
+    padding: 10px;
+}
+
+#MainContent_BookAuthor {
+    font-size: 12pt;
+    font-style: italic;
+}
+
+#MainContent_BookISBN, #BookWebSite {
+    font-size: 10pt;
+    font-style: italic;
+}
+
+#MainContent_BookDescription {
+    font-size: 10pt;
+}
+
+#HeaderTitle {
+    float: left;
+}
+
+#SearchBox {
+    float: right;
+}
